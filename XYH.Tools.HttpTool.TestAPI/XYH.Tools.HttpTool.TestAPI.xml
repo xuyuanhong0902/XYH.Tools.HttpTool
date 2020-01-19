@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>XYH.Tools.HttpTool.TestAPI</name>
+    </assembly>
+    <members>
+        <member name="T:XYH.Tools.HttpTool.TestAPI.Controllers.TestGetAPIController">
+            <summary>
+            测试接口 API
+            </summary>
+        </member>
+        <member name="M:XYH.Tools.HttpTool.TestAPI.Controllers.TestGetAPIController.GetNoParamReturnString">
+            <summary>
+            模拟无参get请求，返回一个字符串
+            </summary>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:XYH.Tools.HttpTool.TestAPI.Controllers.TestGetAPIController.GetNoParamReturnModel">
+            <summary>
+            模拟无参get请求，返回一个实体模型
+            </summary>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:XYH.Tools.HttpTool.TestAPI.Controllers.TestGetAPIController.GetHasParamReturnString(System.String)">
+            <summary>
+            模拟有参get请求，返回一个字符串
+            </summary>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:XYH.Tools.HttpTool.TestAPI.Controllers.TestGetAPIController.GetHasParamReturnModel(System.String)">
+            <summary>
+            模拟有参get请求，返回一个实体模型
+            </summary>
+            <param name="name">name</param>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:XYH.Tools.HttpTool.TestAPI.Controllers.TestGetAPIController.GetHasParamRoutReturnString(System.String)">
+            <summary>
+            模拟有参get请求，返回一个字符串（路由参数，相关与是直接把参数当着路由处理）
+            </summary>
+            <param name="name">name</param>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:XYH.Tools.HttpTool.TestAPI.Controllers.TestGetAPIController.GetHasParamRoutReturnMode(System.String)">
+            <summary>
+            模拟有参get请求，返回一个实体模型
+            </summary>
+            <param name="name">name</param>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:XYH.Tools.HttpTool.TestAPI.Controllers.TestGetAPIController.GetModelReturnModel(XYH.Tools.HttpTool.TestModel.MInputInfor)">
+            <summary>
+            模拟有参post请求(参数也是一个实体)，返回一个实体模型
+            </summary>
+            <param name="model">model</param>
+            <returns>返回结果</returns>
+        </member>
+        <member name="T:XYH.Tools.HttpTool.TestAPI.Controllers.TestPostAPIController">
+            <summary>
+            测试接口 API
+            </summary>
+        </member>
+        <member name="M:XYH.Tools.HttpTool.TestAPI.Controllers.TestPostAPIController.PostNoParamReturnString">
+            <summary>
+            模拟无参post请求，返回一个字符串
+            </summary>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:XYH.Tools.HttpTool.TestAPI.Controllers.TestPostAPIController.PostNoParamReturnModel">
+            <summary>
+            模拟无参post请求，返回一个实体模型
+            </summary>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:XYH.Tools.HttpTool.TestAPI.Controllers.TestPostAPIController.PostHasParamReturnString(System.String)">
+            <summary>
+            模拟有参post请求，返回一个字符串
+            </summary>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:XYH.Tools.HttpTool.TestAPI.Controllers.TestPostAPIController.PostHasParamRoutReturnString(System.String)">
+            <summary>
+            模拟有参post请求，返回一个字符串
+            路由参数，相关与是直接把参数当着路由处理
+            </summary>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:XYH.Tools.HttpTool.TestAPI.Controllers.TestPostAPIController.PostHasParamReturnModel(System.String)">
+            <summary>
+            模拟有参post请求，返回一个实体模型
+            </summary>
+            <param name="name">name</param>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:XYH.Tools.HttpTool.TestAPI.Controllers.TestPostAPIController.PostModelReturnModel(XYH.Tools.HttpTool.TestModel.MInputInfor)">
+            <summary>
+            模拟有参post请求(参数也是一个实体)，返回一个实体模型
+            </summary>
+            <param name="model">model</param>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:XYH.Tools.HttpTool.TestAPI.Controllers.TestPostAPIController.GetHasParamReturnModelFromBody(XYH.Tools.HttpTool.TestModel.MInputInfor)">
+            <summary>
+            模拟有参get请求(参数来自FromBody)，返回一个实体模型
+            </summary>
+            <param name="model">model</param>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:XYH.Tools.HttpTool.TestAPI.Controllers.TestPostAPIController.GetHasParamReturnModelFromForm1(System.String)">
+            <summary>
+            模拟有参get请求，返回一个实体模型
+            </summary>
+            <param name="name">name</param>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:XYH.Tools.HttpTool.TestAPI.Controllers.TestPostAPIController.GetHasParamReturnModelFromForm2(System.String,System.String)">
+            <summary>
+            模拟有参get请求，返回一个实体模型
+            </summary>
+            <param name="name">name</param>
+            <param name="age">age</param>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:XYH.Tools.HttpTool.TestAPI.Controllers.TestPostAPIController.GetHasParamReturnModelFromForm3(XYH.Tools.HttpTool.TestModel.MInputInfor)">
+            <summary>
+            模拟有参get请求(参数来自FromForm)，返回一个实体模型
+            </summary>
+            <param name="model">model</param>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:XYH.Tools.HttpTool.TestAPI.Controllers.TestPostAPIController.GetHasParamReturnModelFromQuery(System.String)">
+            <summary>
+            模拟有参get请求，返回一个实体模型
+            </summary>
+            <param name="name">name</param>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:XYH.Tools.HttpTool.TestAPI.Controllers.TestPostAPIController.GetHasParamReturnModelFromQuery2(XYH.Tools.HttpTool.TestModel.MInputInfor)">
+            <summary>
+            模拟有参get请求，返回一个实体模型
+            </summary>
+            <param name="model">model</param>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:XYH.Tools.HttpTool.TestAPI.Controllers.TestPostAPIController.GetHasParamReturnModel22FromRoute(System.String)">
+            <summary>
+            模拟有参get请求，返回一个实体模型
+            </summary>
+            <param name="name">name</param>
+            <returns>返回结果</returns>
+        </member>
+    </members>
+</doc>
